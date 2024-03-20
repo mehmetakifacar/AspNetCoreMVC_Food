@@ -1,0 +1,15 @@
+﻿@model AspNetCoreMVC_Food.Data.Models.Category
+
+<h2>Category Add Page</h2>
+<br />
+@using (Html.BeginForm("CategoryAdd", "Category", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.Name, "Category Name")
+    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    @Html.ValidationMessageFor(m => m.Name, "", new { @style = "color:red" })
+    <br />
+    @Html.LabelFor(m => m.Description, "Description")
+    @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Save</button>
+}

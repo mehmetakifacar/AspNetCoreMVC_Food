@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreMVC_Food", "AspNetCoreMVC_Food\AspNetCoreMVC_Food.csproj", "{67EBB70E-0103-43CF-83F1-65E6BEC243FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67EBB70E-0103-43CF-83F1-65E6BEC243FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67EBB70E-0103-43CF-83F1-65E6BEC243FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67EBB70E-0103-43CF-83F1-65E6BEC243FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67EBB70E-0103-43CF-83F1-65E6BEC243FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80B20AE3-63E0-4AD9-A0BD-437FF1E37B89}
+	EndGlobalSection
+EndGlobal

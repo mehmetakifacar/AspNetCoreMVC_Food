@@ -1,0 +1,33 @@
+﻿@model List<AspNetCoreMVC_Food.Data.Models.Category>
+
+<h2>Category List</h2>
+<br />
+@using (Html.BeginForm())
+{
+    <p>
+        Food Name: @Html.TextBox("p")
+        <input type="submit" value="Find" />
+    </p>
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Category Name</th>
+        <th>Status</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    @foreach (var list in Model)
+    {
+        <tr>
+            <th>@list.CategoryId</th>
+            <td>@list.Name</td>
+            <td>@list.Status</td>
+            <td><a class="btn btn-danger" asp-controller="Category" asp-action="Delete" asp-route-id="@list.CategoryId">Delete</a></td>
+            <td><a class="btn btn-success" asp-controller="Category" asp-action="CategoryUpdate" asp-route-id="@list.CategoryId">Update</a></td>
+        </tr>
+    }
+</table>
+
+<a class="btn btn-info" asp-controller="Category" asp-action="CategoryAdd">New Category</a>

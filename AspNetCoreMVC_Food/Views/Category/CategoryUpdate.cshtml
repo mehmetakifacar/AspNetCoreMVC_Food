@@ -1,0 +1,17 @@
+﻿@model AspNetCoreMVC_Food.Data.Models.Category
+
+<h2>Category Update</h2>
+<br />
+@using (Html.BeginForm("CategoryUpdate", "Category", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.CategoryId, "Id")
+    @Html.TextBoxFor(m => m.CategoryId, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.Name, "Category Name")
+    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.Description, "Description")
+    @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-warning">Update</button>
+}

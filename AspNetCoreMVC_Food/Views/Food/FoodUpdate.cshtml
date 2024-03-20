@@ -1,0 +1,30 @@
+﻿@model AspNetCoreMVC_Food.Data.Models.Food
+
+<h2>Food Update</h2>
+<br />
+@using (Html.BeginForm("FoodUpdate", "Food", FormMethod.Post))
+{
+    @Html.LabelFor(m => m.FoodId, "Id")
+    @Html.TextBoxFor(m => m.FoodId, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.Name, "Food Name")
+    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.Price, "Price")
+    @Html.TextBoxFor(m => m.Price, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.Stock, "Stock")
+    @Html.TextBoxFor(m => m.Stock, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.ImageUrl, "Image URL")
+    @Html.TextBoxFor(m => m.ImageUrl, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.CategoryId, "Category Id")
+    @Html.DropDownListFor(m => m.CategoryId, (List<SelectListItem>)ViewBag.values, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.Description, "Description")
+    @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Update</button>
+
+}

@@ -1,0 +1,25 @@
+﻿@model AspNetCoreMVC_Food.Data.Models.AddProduct
+
+<h2>Food Add Page</h2>
+<br />
+<form class="form-group" asp-controller="Food" asp-action="FoodAdd" method="post" enctype="multipart/form-data">
+    @Html.LabelFor(m => m.Name, "Name")
+    @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.Stock, "Stock")
+    @Html.TextBoxFor(m => m.Stock, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.Price, "Price")
+    @Html.TextBoxFor(m => m.Price, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.ImageUrl, "Choose Image")
+    <input type="file" name="ImageURL" />
+    <br />
+    @Html.LabelFor(m => m.CategoryId, "Category")
+    @Html.DropDownListFor(m => m.CategoryId, (List<SelectListItem>)ViewBag.values, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(m => m.Description, "Description")
+    @Html.TextAreaFor(m => m.Description, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Save</button>
+</form>
